@@ -1,0 +1,53 @@
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+    modi:                        "dmenu";
+    show-icons:                  true;
+    icon-theme:                  "Papirus";
+}
+window {
+    transparency:                "real";
+    width:                       1250px;
+    enabled:                     true;
+    border:                      3px solid;
+    border-color:                @selected-active-background;
+    background-color:            @background;
+}
+mainbox {
+    enabled:                     true;
+    background-color:            transparent;
+    children:                    [ "listview" ];
+}
+listview {
+    enabled:                     true;
+    columns:                     5;
+    lines:                       3;
+    cycle:                       true;
+    dynamic:                     true;
+    layout:                      vertical;
+    fixed-height:                true;
+    fixed-columns:               true;
+    margin:                      0px 0px 0px 0px;
+    background-color:            transparent;
+}
+element {
+    enabled:                     true;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ element-icon ];
+}
+
+element normal.normal {
+    background-color:            transparent;
+}
+
+element selected.normal {
+    background-color:            @selected-active-background;
+    border-color:                @selected-active-background;
+}
+element-icon {
+    background-color:            transparent;
+    size:                        150px;
+    horizontal-align:            0.5;
+    vertical-align:              0.5;
+}

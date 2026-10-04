@@ -1,0 +1,45 @@
+{
+
+    "layer": "top",
+    "height": 1,
+    "buffer-scale": 1,
+    "modules-left": [
+        "workspaces"
+    ],
+    "modules-center": [
+        "window"
+    ],
+    "modules-right": [
+      //  "tray",
+        "pulseaudio",
+        "clock",
+    ],
+
+    "workspaces": {
+        "hide-empty": false,
+        "tag-names": ["i", "lo", "ve","ch","ik","en","bu","rg","er"],
+        "overview-label": "OVERVIEW",
+        "on-click": "activate",
+        "on-click-right": "toggle"
+    },
+    "layout": {
+        "format": "{}"
+    },
+    "window": {
+        "format": "{}",
+    },
+    "pulseaudio": {
+        "format": "volume{volume}% {bt}",
+        "format-muted": "󰝟 {volume}% {bt}",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 2",
+        "on-scroll-down": "pamixer -d 2"
+    },
+    "clock": {
+        "format": "{:L%m/%d | %H:%M:%S}"
+    },
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+}
