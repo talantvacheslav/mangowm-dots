@@ -1,5 +1,5 @@
 # Mangowm dotfiles by bzix66
-
+## [showcase(youtube)](https://youtu.be/rvA0QVnnPvo)
 ## Installation
 ```bash
 git clone https://github.com/talantvacheslav/mangowm-dots.git
